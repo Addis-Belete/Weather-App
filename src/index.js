@@ -1,4 +1,5 @@
-const cityWeather = function (city_name) {
+import { displayData } from './dom'
+const cityWeather = function (city_name = 'Addis Ababa') {
 	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=665d996c0995235e2a6538dc312d1922`, {
 		method: 'GET',
 		mode: 'cors'
@@ -11,6 +12,7 @@ const cityWeather = function (city_name) {
 			return response.json()
 
 		}).then(function (result) {
+			displayData(result);
 			console.log(result);
 		}).catch((e) => {
 			console.log(e);
@@ -26,6 +28,7 @@ form.addEventListener('submit', (e) => {
 		const errorMessage = document.createElement('div')
 		errorMessage.innerHTML = "Please Fill city name";
 		document.body.append(errorMessage);
+
 	}
 	else {
 		cityWeather(city_name.value);
