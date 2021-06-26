@@ -9,8 +9,8 @@
 ## Built With
 
 - Javascript
-- Html
-- Css
+- HTML
+- CSS3
 - Webpack
 
 ## Live Demo
