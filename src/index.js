@@ -1,6 +1,8 @@
 import './style.css'
 import { displayData } from './dom'
 import { clearField } from './logic';
+
+
 const cityWeather = function (city_name = 'Addis Ababa') {
 	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=665d996c0995235e2a6538dc312d1922`, {
 		method: 'GET',
@@ -28,13 +30,19 @@ window.onload = function () {
 		e.preventDefault();
 		if (city_name.value === '') {
 			const errorMessage = document.createElement('div')
-			errorMessage.innerHTML = "Please Fill city name";
+			errorMessage.innerHTML = `<p id = "error">Please Fill city name</p>`
 			document.body.append(errorMessage);
-
+			setTimeout(function () {
+				errorMessage.innerText = "";
+			}, 3000);
 		}
 		else {
-			cityWeather(city_name.value);
+
+			cityWeather(city_name.value)
 			clearField()
+
 		}
+
 	})
 }
+cityWeather()
