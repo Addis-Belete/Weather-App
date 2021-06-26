@@ -1,23 +1,22 @@
 import './style.css'
-import { displayData } from './dom'
+import { displayData, displayError } from './dom'
 import { clearField } from './logic';
 
 
 const cityWeather = function (city_name = 'Addis Ababa') {
-	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=665d996c0995235e2a6538dc312d1922`, {
+	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=metric&appid=665d996c0995235e2a6538dc312d1922`, {
 		method: 'GET',
 		mode: 'cors'
 	})
 		.then(function (response) {
 			if (!response.ok) {
-				throw Error(response.statusText + ' - ' + response.url);
+				displayError()
 			}
-			console.log(response);
 			return response.json()
 
 		}).then(function (result) {
 			displayData(result);
-			console.log(result);
+
 		}).catch((e) => {
 			console.log(e);
 		});
@@ -36,6 +35,7 @@ window.onload = function () {
 				errorMessage.innerText = "";
 			}, 3000);
 		}
+
 		else {
 
 			cityWeather(city_name.value)
@@ -45,4 +45,3 @@ window.onload = function () {
 
 	})
 }
-cityWeather()

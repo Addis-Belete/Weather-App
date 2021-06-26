@@ -1,5 +1,5 @@
 body{
-background-color:black ;
+background-color:#E5E5E5 ;
 }
 
 header{
@@ -27,51 +27,76 @@ width: 10%;
 height: 36px;
 border: none;
 color: white;
-background-color: orange;
+background-color: #FF6B00;
 position: absolute;
 left:67%;
 top:50px;
-font-size: 4vh;
+font-size: 2vh;
 font-weight: bold;
 z-index: 1;
 
 }
-section{
-display: gird;
-grid-template-columns: 1fr 1fr;
-}
+
 
 .card{
-width: 40%;
+width: 65%;
 height: auto;
 margin-left: auto;
 margin-right: auto;
 position: relative;
-top:120px;
+top:70px;
 
 
 }
 h2{
-color: aliceblue;
+color: #091E42;
 text-align: center;
-
+font-size: 10vh;
+position: relative;
+top:-10px;
+padding-bottom: -200px;
 }
 h4{
-color: aliceblue;
+color: #091E42;
 text-align: center;
+font-size: 7vh;
+position: relative;
+top:-60px;
+padding-bottom: -200px;
 }
 p{
-color: aliceblue;
+color: #091E42;
 text-align: center;
+font-size: 10vh;
+position: relative;
+top:-100px;
+padding-bottom: -200px;
 }
 img{
 width: 60%;
 margin-left: 20%;
 margin-right: auto;
+position: relative;
+top:-200px;
+
+height: 150px;
 }
 div #error{
 color: red;
 position: relative;
-top:100px;
+top:70px;
+font-size: 4vh;
+
+}
+.add-info{
+position: relative;
+top:-230px;
+margin-left: 13%;
+height: 0;
+
+}
+span{
+color: #091E42;
+font-size: 25px;
 
 }
