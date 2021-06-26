@@ -4,7 +4,7 @@ import { displayData, displayError } from './dom';
 import clearField from './logic';
 
 const cityWeather = function (city_name = 'Addis Ababa') {
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=metric&appid=665d996c0995235e2a6538dc312d1922`, {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=metric&appid=665d996c0995235e2a6538dc312d1922`, {
     method: 'GET',
     mode: 'cors',
   })
