@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack --mode development",
-"build": "webpack --mode production",
-"start": "webpack-dev-server --mode development --open" 
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -31,11 +31,12 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.19.0",
     "webpack": "^5.40.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "lodash": "^4.17.21",
-"webpack": "^5.40.0",
+    "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2"
   }
 }
