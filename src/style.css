@@ -98,3 +98,28 @@ span {
   color: #091e42;
   font-size: 25px;
 }
+
+.btns{
+position: relative;
+top:180px;
+left:140px;
+}
+.btns button{
+width: 50px;
+padding: 5px;
+border: none;
+color: #091e42;
+font-weight: bold;
+
+}
+.btns #celcius{
+position: relative;
+right: 4px;
+
+
+}
+
+.btns button:hover{
+background-color: #ff6b00;
+color: #e5e5e5;
+}
