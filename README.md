@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://addis0943.github.io/Weather-App/)
+[Live Demo Link](https://deploy-preview-1--amazing-bartik-648d08.netlify.app/)
 
 ## Getting Started
 
