@@ -33,9 +33,6 @@ If you want to repack the file
 
 - Go to the dist folder and open index.html
 
-## Live Link of the project
-
-[Live-Link](https://todo5600.netlify.app/)
 
 ## Author
 
